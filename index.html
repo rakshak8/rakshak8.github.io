@@ -1,666 +1,171 @@
-<!doctype html>
-<html ⚡ lang="en-us" prefix="og: https://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#ffffff">
-      <link rel="canonical" href="https://rakshak8.github.io">
-    <title>rakshak8</title>
-    <meta name="msvalidate.01" content="B8F524E0DEC63E0042C06B5931F2CBA4" />
-    <meta name="description" content="rakshak8">
-
-    <link rel="manifest" href="https://marathitrends.in/manifest.json">
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="https://marathitrends.in/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://marathitrends.in/logo/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://marathitrends.in/logo/apple-touch-icon.png">
-    <link rel="icon" sizes="180x180" href="https://marathitrends.in/logo/apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="https://marathitrends.in/logo/android-chrome-192x192.png">
-    <link rel="icon" sizes="512x512" href="https://marathitrends.in/logo/android-chrome-512x512.png">
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<!--  og meta tags -->
-<meta property="og:description" 
-  content="rakshak8" />
-<meta property="og:title" content="rakshak8" />
-<meta property="og:type" content="page" />
-<meta property="og:article:section" content="person" />
-<meta property="og:article:tag" content="person , information" />
 
 
-<meta property="og:url" content="https://rakshak8.github.io/index.html" />
-<meta property="og:image" content="https://marathitrends.in/assets/jiophone-bharat/jiophone-bharat-2.png" />
-<meta property="og:locale" content="mr_IN" />
-<meta property="og:locale:alternate" content="en_IN" />
-<meta property="og:site_name" content="rakshak8" />
-
-<!--  og meta tags -->
-
-<!--  schema meta tags -->
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
 
-
-    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!-- Import other AMP Extensions here -->
-
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-
-   
-       
-
-   <!-- amp mustache -->
-<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-
-
-    <style amp-custom>
-    /* Add your styles here */
-:root{
-	--rt-side:#04575e;
-	--lt-side:#0b97a3;
-	--ct-side:#704242;
-	--rr-side:#6e6310;
-	--bk-side:#363434;
-}
-
-*{
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Sahitya', serif;
-margin:0px;
-padding:0px;
+<style>
+html {
+  scroll-behavior: smooth;
 }
 body{
 margin:0px;
-padding:0px;
-background-color:#ffffff;
-background-color:#f2f2f2;
-font-familyy: 'Noto Sans', sans-serif;
-font-family: 'Sahitya', serif;
-}
-ol{
-color:#4d4d4d;
-line-height:32px;
-font-size:20px;
-}
-a{
-text-decoration:none;
-color:#3639e3;
-}
-a:hover{
-color:#f57040;
+background-color:#4d4d4d;
 }
 
-h1, h2, h3, h4, h5, li{
-color:#3d3d3d;
+.container{display:flex;height:100%}
+
+.leftside{
+box-shadow: 0px 7px 7px 0px #00000070;
+margin:12px 12px 12px 12px;
+width:40%;
+height:100%; 
+background-color:#fff;
 }
 
-.h3-title{
-font-weight:bold;
-font-size:30px;
-color:#4d4d4d;
+.rightside{margin:12px 12px 12px 0px;
+width:60%;
+height:100%;
 }
 
-p{
-color:#4d4d4d;
-line-height:32px;
-font-size:20px;
+.widget{margin:5px;
+background:grey;
+border-radius:25px;
+height:40px;
 }
-.paragraph{
-margin-top:20px;
-margin-bottom:20px;
-color:#4d4d4d;
-line-height:32px;
-font-size:20px;
+.percentbox{height:20px;
+width:100%;
+border:1px solid grey;
+border-radius:15px;
 }
-.h4-italic{
-font-style:italic;
-}
-.headerbar{
-background-color:#edfbfc;
-
-color:#5acedb;
-}
-
-.home-button {
-  margin-top: 8px;
-}
-.headerbar {
-  height: 50px;
-  positio: fixed;
-  z-index: 999;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.site-name {
-  margin: auto;
-font-weight:bold;
-font-size:25px;
-}
-.site-name-link{
-text-decoration:none;
-color:#5acedb;
-}
-
-.hamburger {
-  padding-left: 10px;
-font-weight:bold;
-font-size:30px;
-margin-right:35px;
-}
-#sidebar1{
-  align-items: center;
-background-image: linear-gradient(to right, var(--lt-side) , var(--rt-side));
-}
-
-.sidebar {
-  padding: 20px;
-  margin: 0;
-  width:auto;
-
-  font-weight:600;
-  margin:10px;
-  border:1px solid #fff;
-  border-radius:15px;
-  }
-.sidebar > li {
-  list-style: none;
-  margin-bottom:10px;
-}
-.sidebar a {
-  text-decoration: none;
-  color:#fff;
-}
-.sidebar h3{
-color:#fff;
-}
-.close-sidebar {
-  margin-left:135px;
-  margin-top:7px;
-  font-size: 30px;
-  padding-left: 5px;
-  color:#fff;
-  font-weight:bold;
-}
-
-.sidebar2 {
-  padding: 20px;
-  width:auto;
-  font-weight:600;
-  margin:10px;
-  border:1px solid #fff;
-  border-radius:15px;
-  }
-.sidebar2 > li {
-  list-style: none;
-  margin-bottom:10px;
-}
-.sidebar2 a {
-  text-decoration: none;
-  color:#fff;
-}
-.sidebar a:hover{
-color:#ab2020;
-}
-.sidebar2 a:hover{
-color:#ab2020;
-}
-
-.footer1{
-padding:20px;
-background-color:#2b2b2b;
-align-items:center;
-text-align:center;
-color:#a8a8a8;
-}
-.footer1 p{
-color:#fff;
-}
-.footer1 p a{color:#fceb26;}
-
-.footer1 p a:hover{color:#f57040;}
-
-.footer-link{
-text-decoration:none;
-color:#a8a8a8;
-margin:20px;
-padding:10px;
-line-height:50px;
-font-size:16px;
-font-weight:600;
-white-space: nowrap;
-}
-
-.footer-link:hover{
-background:#00000030;
-}
-
-.link-container{
-margin:25px;
-}
-
-
-ol{margin:20px;}
-
-
-ul{margin:20px;}
-table{border-collapse: collapse; font-family: arial, sans-serif; width: 100%;}
-
-/*  profile style */
-
-
-.profile{
-    margin:20px;
-    padding:20px;
-    background-color:#fff;
-    text-align:center;
-    }
-
-.profile-container{
-    margin:20px;
-    padding:20px;
-    background-color:#fff;
-    }
-
-.profile-img{
-    width:150px;
-    margin:auto;
-    margin-top:-100px;
-    border-radius:50%;
-    border:2px solid #000;
-    pointer-events:none;
-   background:grey;
-    }
-.profile-desc{
-    color:#808080;
-    font-size:24px;
-    font-weight:400;
-    text-align:left;
-    }
-.profile-desc{
-margin:30px 0px;
-}
-
-.profile-desc:first-child{
-margin-top:0px;
-}
-    
-
-
-/* 800 chy aaaat */
-@media screen and (max-width: 800px) {
-nav{display:none;
-}
-
-amp-img{
-    margin:20px 1px;
-box-shadow: 0px 3px 8px 0px #00000030;  
-    }    
-
-.headerbar{
-height:70px;
-}
-.site-name {
-  margin-left:1em;
-}
-.site-name-link{
-font-size:40px;
-}
-
-/*       profile style */
-
-    
-.profile{
-    margin:200px 20px;
-    border-radius:5px;
-    box-shadow: 0px 0px 3px 0px #00000040;  
-    }
-
-    
-.profile-container{
-    margin:200px 20px;
-    border-radius:5px;
-    box-shadow: 0px 0px 3px 0px #00000040;  
-    }
-
-.profile-desc{
-margin:30px 0px;
-}
-
-.profile-desc:first-child{
-margin-top:0px;
-}
-
-.rightside{
-display:none;
-}
-
-.link-icn{
-width:40px;
-border-radius:50%;
-border:0px solid #fff;
-box-shadow: 0px 0px 3px 0px #00000040;
-margin-right:20px;
-}
-
-.social-account{
-display:flex;
-margin:auto;
-padding:auto;
-justify-content:center;
-}
-
-
-
-}
-
-
-/* 800 chy vr */
-@media screen and (min-width: 800px) {
-#sidebar1{
-display:none;
-}
-
-amp-img{
-    margin:20px 1px;
-box-shadow: 0px 0px 3px 0px #00000040;  
-    }
-    
-.headerbar{
-height:100px;
-box-shadow: 0px 15px 10px -15px #00000040;   
-}    
-    
-.hamburger{
-display:none;
-}
-.site-name {
-  margin-left:7em;
-}
-.site-name-link{
-font-size:70px;
-font-weight:800;
-margin-bottom:40px;
-}
-
-.site-link-container{
-list-style-type:none;
+.percent{height:20px;
+width:70%;
+background-color:yellow;
+color:grey;
 text-align:center;
 }
-.site-link2{
-float:right;
-padding:4px 7px;
-margin-right:20px;
-text-align:center;
-margin-bottom:20px;
-}
-.site-link2 a{
-color:#4d4d4d;
-font-weight:400;
-font-size:20px;
-}
-.site-link2 a:hover{
-color:maroon;
-}
-    
-.title1{
-    font-size:40px;
-    }
-    
-
-    
-.container{display:flex;
-	margin:0px 70px;
-    margin-top:200px;
-}
-  
-.leftside{   
-  float: left;
-  width: 50%;
-}
-.rightside{   
-  float: left;
-  width: 50%;
-}
- .link-icn{
-width:90px;
-}
-    
-}
-
-@media only screen and (max-width: 1070px) and (min-width: 800px) {
-
-.site-name-link{
-    font-size:40px;}
-    
-.headerbar{
-height:200px;
-}
-.container{
-	margin-top:5em;
-    margin-top:200px;
-}
-
-
-}
-#sidebar1{display:none;}
-.headerbar{display:none;}
-
-    </style>
-
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-  
-   <!-- metadata start -->
-
-  </head>
-
-  <body>
-<!-- auto ads rakshak -->
-<!-- amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-2567389909188460">
-</amp-auto-ads -->
-
-
-<header class="headerbar">
-  <div class="site-name"><a class="site-name-link" href="https://marathitrends.in">RAKSHAK </a></div>
-  <nav>
-    <ul class="site-link-container">
-      <li class="site-link2"><a href="https://marathitrends.in/p/about.html">About</a>
-      </li>
-      <li class="site-link2"><a href="https://marathitrends.in/p/contact.html">Contact us</a>
-      </li>
-      <li class="site-link2"><a href="https://marathitrends.in/p/disclaimer.html">Disclaimer</a>
-      </li>
-      <li class="site-link2"><a href="https://marathitrends.in/p/privacy.html">Privacy Policy</a>
-      </li>
-      <li class="site-link2"><a href="https://marathitrends.in/p/terms.html">Terms & Conditions</a>
-      </li>
-      <li class="site-link2"><a href="https://marathitrends.in/web-stories.html">Web Stories</a>
-      </li>
-    </ul>
-  </nav>
-  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
-</header>
-
-<amp-sidebar id="sidebar1" layout="nodisplay" side="right">
-<div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
-<ul class="sidebar">
-<h3>Category</h3>
-<hr/>
-<li><a href="https://marathitrends.in/p/about.html">About</a>
-</li> 
-<li><a href="https://marathitrends.in/p/contact.html">Contact me</a></li>
-<li><a href="https://marathitrends.in/p/disclaimer.html">Disclaimer</a></li>
-<li><a href="https://marathitrends.in/p/privacy.html">Privacy Policy</a>
-</li> 
-<li><a href="https://marathitrends.in/p/terms.html">Terms & Conditions</a>
-</li> 
-</ul>
-
-<ul class=sidebar2>
-<li><a href="https://marathitrends.in/web-stories.html">Web Stories</a></li>
-</ul>
+</style>
 
 
 
-</amp-sidebar>
-
-    
-<div style="margin-top:20px;background-color:#fff;">
-</div>
-
-</br>
 
 
-<!--  container start-->
+</head>
+
+<body>
+
 <div class="container">
 
-
-<!--   left side start-->
 <div class="leftside">
-    
 
-
-
-
-<!-- post thumbnail start -->
 <div class="profile">
+<div class="profile-img">
+<h3>RAKSHAK</h3>
+</div>
+<!-- profile img -->
+
+<div class="profile-desc">
+
+<div><i class="fa fa-briefcase" style="font-size:15px;color:yellow;"></i>
+
+Front End</div>
+
+<div><i class="fa fa-home" style="font-size:15px;color:yellow;"></i>
+Raigad</div>
+
+<div><i class="fa fa-envelope" style="font-size:15px;color:yellow;"></i>rakshak@outlook.in</div>
+
+<div><i class="fa fa-phone" style="font-size:15px;color:yellow;"></i>1111 2222</div>
 
 
-<div>
+</div>
+<!-- details  -->
 
-<amp-img
-  class="profile-img"
-  alt="rakshak"
-  src="https://marathitrends.in/img/rk/rakshak.jpg"
-  width="1"
-  height="1"
-  layout="responsive"
->
-</amp-img>
 
-<h1>rakshak8</h1>
+
+</div>
+<!-- profile end  -->
+
+<hr/>
+
+<div class="">
+
+<div><i class="fa fa-certificate" style="font-size:15px;color:yellow;"></i>1111 2222</div>
+
+<!-- #############@@@@@@  -->
+<div class="">
+<p>Test Title</p>
+<div class="percentbox">
+<div class="percent">70%
+
+</div>   
+<!-- percent end-->
+
+</div>    
+<!-- percent box end-->
+</div>
+
+<!-- #############@@@@@@  -->
+<div class="">
+<p>Test Title</p>
+<div class="percentbox">
+<div class="percent">70%
+
+</div>   
+<!-- percent end-->
+
+</div>    
+<!-- percent box end-->
 </div>
 
 
 
-<div>
-<p class="profile-desc">Content writer, editor & translator,  specialize in translate content from eng. to mr.</p>
-
-
-<p class="profile-desc">about this site- This i.</p>
 </div>
+<!-- end -->
 
 
-
-<div class="social-account">
-
-
-<a href="https://facebook.com/rakshak8" class="link-link"><amp-img alt="fb-icon" src="https://rakshak8.github.io/img/f.png" width="1" height="1" layout="responsive" class="link-icn"></amp-img></a>
-
-<a href="https://wa.me/+917738342975" class="link-link"><amp-img alt="fb-icon" src="https://rakshak8.github.io/img/wa.png" width="1" height="1" layout="responsive" class="link-icn"></amp-img></a>
-
-<a href="https://instagram.com/rakshak_8" class="link-link"><amp-img alt="fb-icon" src="https://rakshak8.github.io/img/ig.jpeg" width="1" height="1" layout="responsive" class="link-icn"></amp-img></a>
-
-<a href="https://telegram.me/rakshak8" class="link-link"><amp-img alt="fb-icon" src="https://rakshak8.github.io/img/t.png" width="1" height="1" layout="responsive" class="link-icn"></amp-img></a>
-
-</div>
 
 
 </div>
-<!-- profile container end -->
+<!--  leftside end  -->
 
 
 
 
-
-<!-- post thumbnail start -->
-<div class="profile-container">
-
-<h3>INFORMATION</h3>
-<p class="profile-desc">
-
-<li>Name : rakshak</li>
-<li>COUNTRY : India</li>
-<li>Location : Mumbai MH</li>
-<li>KNOWNS : HTML, CSS</li>
-<li>Email : rakshak@outlook.in</li>
-<li>FREELANCE : Available</li>
-
-about this site- This is a static website. And only use HTML & CSS. Not used any other third party js other than AMP script. this site is manually manage .</p>
-
-
-</div>
-
-
-
-<!-- post thumbnail start -->
-<div class="profile-container">
-
-
-<p class="profile-desc">about this site- This is a static website. And only use HTML & CSS. Not used any other third party js other than AMP script. this site is manually manage .</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<!--   left side start-->
-</div>
-
-<!--   right side start-->
 <div class="rightside">
 
+</div>
+<!--  rightside end  -->
 
-<div class="widget">
+
+
+
 
 
 </div>
 
-
-<!--  div class="widget1">
-<p>This course</p>
-</div  -->
-
-<div class="profile-container">
+<!--  container end ######   -->
 
 
-<p class="profile-desc">about this site- This is a static website. And only use HTML & CSS. Not used any other third party js other than AMP script. this site is manually manage .</p>
+
+
+
+
+
+<div style="width:100%;height:50px;border:1px solid #000;">
+
+<div style="width:70%;height:50px; background:grey;"></div>
+
 
 
 </div>
 
-
-<!--   right side end-->
-</div>
-
-
-<!--  container end-->
-</div>
-
-
-
-
-  </body>
+</body>
 </html>
