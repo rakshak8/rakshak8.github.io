@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Menbere:wght@100..700&display=swap" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Menbere:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Menbere:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Twinkle+Star&display=swap" rel="stylesheet">
+
+
+
+<!--//////////////
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+.twinkle-star-regular {
+  font-family: "Twinkle Star", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+////////  -->
+
+
+
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Menbere", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  height:auto;
+  padding: 50px;
+  font-size: 20px;
+  text-align: center;
+  background: navy;
+  color:#fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   box-shadow: 0px 0px 9px 9px red; /*any color you want*/
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 0px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  /* Add a card effect for articles */
+.card {
+   background-color: white;
+   box-shadow: 0px 0px 15px 15px #00000020; /*any color you want*/
+   padding: 20px;
+   margin: 25px;
+}
+}
+
+
+
+
+
+
+
+///////////////////////
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+///////////////////////
+
+
+</style>
+</head>
+<body>
+
+
+
+<!-- Simulate a smartphone / tablet -->
+<!--div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<!-- div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div-->
+
+<!--  div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div-->
+
+<!-- End smartphone / tablet look -->
+</div  -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+
+
+<div class="about-vishal" style="text-align:center;height:auto;background-color:#29251c;color:#ffffff;padding:10px;display:flex;">
+
+<a href="mailto:vishal@gmail.com" style="width:50%;text-decoration:none;text-align:center;font-size:15px;color:#ffffff;">vishal@gmail.com <i class="fa fa-envelope" style="margin-left:20px;text-align:center;font-size:20px;color:#f2d591;"></i></a>
+<a href="https://wa.me/917738342975" style="width:50%;text-decoration:none;text-align:center;font-size:15px;color:#ffffff;">+917738342975  <i class="fa fa-whatsapp" style="margin-left:20px;text-align:center;font-size:20px;color:#f2d591;"></i></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="header">
+  
+  <h1><img src="logo.png" style="width:400px; heightt:160; borderr-radius:45px;"></img></h1>
+  <p> Home Loan Process Make easy
+  </p>
+</div>
+
+<div class="describe">
+<p style="font-size:50px;color:black;padding:50px;">"We Offer Home Loan Service,<br/>
+Renovation Home Loan Service,<br/>
+Takeover Home Loan/ Balance Transfer Home Service...
+"</p>
+
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2> Home Loan</h2>
+      <h5>Home Loane Description</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Balance Transfer Home Loan</h2>
+      <h5>Balance Transfer Home Loan description,</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>NRI Home Loan</h2>
+      <h5>Balance Transfer Home Loan description,</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Mortgage Home Loan</h2>
+      <h5>Mortgage Home Loan description,</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="about-vishal" style="height:auto;background-color:#29251c;color:#807c74;display:flex;padding:50px;">
+<div class="about-v-left">
+<p style="margin-bottom:50px;">VISHAL BHATKAR
+VISHAL is experienced Home loan advisor with demonstrated history of 10+ years working in LIC HOUSING FINANCE services. Strong finance professional with Home Loan Finance, Finance against property in Mumbai.
+
+SHIVANSH Consultancy is a leading loan enterprise established by Mr. VISHAL BHATKAR.
+
+Our motto is to make the HOME process easy and simpler, more transparent and within the reach of people who are new in the world of borrowing money, or for those who are pressed for time.</p>
+</div>
+
+<div class="about-v-right">
+<img src="logo.png" style="width:200px; heightt:90; borderr-radius:45px;"></img>
+</div>
+
+</div>
+
+<div class="about-vishal" style="text-align:center;height:auto;background-color:#29251c;color:#ffffff;padding:50px;display:block;">
+<h2>Contact US</h2>
+<a href="mailto:vishal@gmail.com" style="text-decoration:none;text-align:center;font-size:20px;color:#ffffff;">vishal@gmail.com <i class="fa fa-envelope" style="margin:20px 20px;text-align:center;font-size:40px;color:#f2d591;"></i></a>
+<a href="https://wa.me/917738342975" style="text-decoration:none;text-align:center;font-size:20px;color:#ffffff;">+917738342975  <i class="fa fa-whatsapp" style="margin-left:20px;text-align:center;font-size:40px;color:#f2d591;"></i></a>
+
+</div>
+
+
+
+
+
+
+<div class="footer" style="height:100px;background-color:#211f1b;color:#5e5c57;">
+  <h5>@copyright - 2025</h5>
+  <h5>site template by <a href="">rakshak_8</a>
+  </h5>
+</div>
+
+</body>
+
+
+
+
+
+</html>
+
